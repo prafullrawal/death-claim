@@ -3,18 +3,30 @@
 <head>
 <title>Death Claim Process</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+<script src="app.js"></script> 
+<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
 <link href="css/style.css" rel="stylesheet">
 <link href="css/style-1.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="./js/notification.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"
+
+
 </head>
 
-<body>
+<body ng-app="myModule" ng-controller="myController">
 <div class="container-fluid"> 
-  
+
+  <!-- loader icon -->
+  <div id="cover-spin"></div>
+	  
   <!-- Header Section starts here-->
   <header class="header_bg">
     <div class="header_left"></div>
@@ -41,101 +53,200 @@
 
     <div class="dashboard_right tabcontent" id="tabs-1" >
       <h3>Death Event Recorded</h3>
+    <form>  
 
-      <div class="col-md-3">
-        <label>Person ID</label>
-        <input type="text" value=" ">
+      <div class="row">      	
+       <div class="col-md-3">
+	<label>Hospital</label>
+          <input id="hospital" type="text" disabled  name="Apollo"  value="Apollo"  ></input>
         <label>Date of Death</label>
-        <input type="date" value=" ">
-      </div>
-      <div class="col-md-3">
+         <input type="date" ng-model="data.deathOfDeath" value=" " required="true">
+       </div> 
+     
+       <div class="col-md-3">
         <label>Person Name</label>
-        <input type="text" value=" ">
+          <input type="text" ng-model="data.personName"  value=" " required="true">
         <label>SSN</label>
-        <input type="text" value=" ">
+          <input type="text" ng-model="data.SSNo"  value=" " required="true" placeholder="Ex  123-41-2345">
+       </div>
       </div>
       <div class="col-md-6">
         <label>Address</label>
-        <textarea></textarea>
+        <textarea ng-model="data.address" required="true"></textarea>
       </div>
-      <div class="clearfix"></div>
-      <div class="col-md-3">
-        <label>Policy Number</label>
-        <input type="text" value=" ">
-      </div>
-      <div class="col-md-3">
-        <label>Beneficiary Name</label>
-        <input type="text" value=" ">
-      </div>
-      <!--<div class="col-md-3">
-        <label>Beneficiary Notified</label>
-        <span class="group">
-        <input type="radio" id="test1" name="radio-group_1" checked>
-        <label for="test1">Yes</label>
-        <input type="radio" id="test2" name="radio-group_1">
-        <label for="test2">No</label>
-        </span>
-      </div>-->
-      <!--<div class="col-md-3">
-        <label>Cert. Provided</label>
-        <span class="group">
-        <input type="radio" id="test3" name="radio-group_2" checked>
-        <label for="test3">Yes</label>
-        <input type="radio" id="test4" name="radio-group_2">
-        <label for="test4">No</label>
-        </span>
-      </div>-->
-      <div class="clearfix"></div>
-      <!--<div class="col-md-3">
-        <label>Funeral Home Notified</label>
-        <span class="group">
-          <input type="radio" id="test5" name="radio-group_3" checked>
-          <label for="test5">Yes</label>
-          <input type="radio" id="test6" name="radio-group_3">
-          <label for="test6">No</label>
-        </span>
-        <label>Funeral Home</label>
-        <input type="text" value=" ">
-      </div>-->
-      <div class="col-md-3">
-          <!--<label>Insurer Verified</label>
-          <span class="group">
-            <input type="radio" id="test7" name="radio-group_4" checked>
-            <label for="test7">Yes</label>
-            <input type="radio" id="test8" name="radio-group_4">
-            <label for="test8">No</label>
-         </span>-->
-          <label>Hospital</label>
-          <input type="text" value=" ">
-      </div>
-      <!--<div class="col-md-3">
-        <label>Claim Status</label>
-        <span class="group_chk">
-        <label class="checkstyle">Claimed
-          <input type="checkbox" checked="checked">
-          <span class="checkmark"></span> </label>
-        <label class="checkstyle">Not Claimed
-          <input type="checkbox">
-          <span class="checkmark"></span> </label>
-        <label class="checkstyle">Claim Requested
-          <input type="checkbox">
-          <span class="checkmark"></span> </label>
-		  </span>  
-      </div>-->
-      <!--<div class="col-md-3">
-        <label>Cert. Requested</label>
-        <input type="text" value=" ">
-      </div>
-      -->
       <div class="clearfix"></div>
       <div class="submit_block"></div>
-      <input type="submit" value="SUBMIT">
-      <div class="clearfix"></div>
+      <input type="submit" value="SUBMIT" ng-click="postDeathRecord(data)"></input>
+      <div class="clearfix"></div> 
+    </form> 
+   </div>	
+ 	
+    <div class="dashboard_right tabcontent"  id="tabs-2" >
+      <h3>Insurer( verify SSN and notify to beneficiary ) &nbsp; &nbsp; <a href="" class="fas fa-sync" ng-click="getAllPatientform()"></a></h3>
+      <div class="col-md-12">
+        <table>
+          <tbody>
+            <tr>
+              <th>Person ID</th>
+              <th>Person Name</th>
+              <th>Address</th>
+              <th>Date of Death</th>
+              <th>SSN</th>
+              <th>Hospital</th>
+              <th>Beneficiary Notified</th>
+              <th>&nbsp;</th>
+            </tr>
+            <tr ng-repeat="paitentRecord in allPaitentRecord" ng-if="paitentRecord.Beneficiary_notified=='No' || paitentRecord.Cert_Provided=='Yes'">
+              <td>{{paitentRecord.pid}}</td>
+              <td>{{paitentRecord.pname}}</td>
+              <td>{{paitentRecord.address}}</td>
+              <td>{{paitentRecord.dod}}</td>
+              <td>{{paitentRecord.SSN}}</td>
+              <td>{{paitentRecord.Hospital}}</td>
+              <td>{{paitentRecord.Beneficiary_notified}}<br><span ng-if="paitentRecord.Beneficiary_notified=='No'"  class="red">Insurer Not Verified</span></td>
+              <td>  
+              <div ng-if="paitentRecord.Beneficiary_notified=='No'"> 
+			<!-- Button trigger modal -->
+                    <input type="submit" value="Verify and Notify" data-toggle="modal" data-target="#exampleModalCenter{{paitentRecord.pid}}">
+
+                    <!-- Modal -->
+                    <div class="modal fade bd-example-modal-lg" id="exampleModalCenter{{paitentRecord.pid}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Person Details</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+					                    	
+			<table>
+                            <tbody>
+                                <tr>
+                                    <th>Person ID</th>
+                                    <th>Policy No.</th>
+                                    <th>Beneficiary Name</th>
+                                </tr>
+                                <tr>
+                                    <th>{{paitentRecord.pid}}</th>
+                                    <th>
+                                        <input type="text" class="col-md-6"  ng-model="paitentRecord.policyNo"  value="" required="true">
+                                    </th>
+                                    <th>
+                                        <select  name="Beneficiary Name" ng-model="paitentRecord.beneficiaryName">
+                                            <option selected value="1548678580199">same</option>
+                                        </select>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+	
+                                </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <input type="submit" value="SUBMIT" ng-click="VerifyandNotifyBeneficiary(paitentRecord)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+		</div>
+		
+		<div ng-if="paitentRecord.Cert_Provided=='Yes'">
+		   
+		   <input type="submit" value="Claim granted" ng-click="claiminitiation(paitentRecord)">
+		  
+		</div>
+	      </td>
+            </tr>
+          </tbody>
+        </table>
+      </div> 
+    </div>
+     
+
+
+    <div class="dashboard_right tabcontent"  id="tabs-3" >
+      <h3>Beneficiary ( Select funeral home ) &nbsp; &nbsp; <a href="" ng-click="getAllPatientform()"  class="fas fa-sync"></a></h3>
+      <div class="col-md-12">
+        <table>
+          <tbody>
+            <tr>
+              <th>Person ID</th>
+              <th>Person Name</th>
+              <th>Address</th>
+              <th>Date of Death</th>
+              <th>SSN</th>
+              <th>Policy Number</th>
+              <th>Beneficiary Notified</th>
+              <th>Funeral Home</th>
+              <th>Hospital</th>
+              <th>&nbsp;</th>
+            </tr>
+            <tr ng-repeat="paitentRecord in allPaitentRecord" ng-if="paitentRecord.Beneficiary_notified=='Yes'">
+       		<td>{{paitentRecord.pid}}</td>
+                <td>{{paitentRecord.pname}}</td>
+                <td>{{paitentRecord.address}}</td>
+                <td>{{paitentRecord.dod}}</td>
+                <td>{{paitentRecord.SSN}}</td>
+                <td>{{paitentRecord.Policyno}}</td>
+                <td>{{paitentRecord.Beneficiary_notified}}<br><span class="green">Notified</span></td>
+                <td><select  name="Funeral Homes" ng-model="paitentRecord.funeralHome">
+                        <option value="1548678755075">Star</option>
+                    </select>
+                </td>
+                <td>{{paitentRecord.Hospital}}</td>
+                <td>
+                     <input type="submit" value="Update" ng-click="Beneficiaryupdate(paitentRecord)">     
+                </td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
+    <div class="dashboard_right tabcontent"  id="tabs-4" >
+      <h3>Funeral Home ( verify & request for death certificate ) &nbsp; &nbsp; <a  href="" ng-click="getAllPatientform()" class="fas fa-sync"></a></h3>
 
-    <div class="dashboard_right tabcontent"  id="tabs-2" >
-      <h3>Insurer Event Recorded &nbsp; &nbsp; <a href="#" class="fas fa-sync"></a></h3>
+      <div class="col-md-12">
+        <table>
+          <tbody>
+            <tr>
+              <th>Person ID</th>
+              <th>Person Name</th>
+              <th>Address</th>
+              <th>Date of Death</th>
+              <th>SSN</th>
+              <th>Policy Number</th>
+              <th>Beneficiary Name</th>
+              <th>Isurer Verified</th>
+              <th>Funeral Home</th>
+              <th>Hospital</th>
+              <th>&nbsp;</th>
+            </tr>
+            <tr ng-repeat="paitentRecord in allPaitentRecord" ng-if="paitentRecord.Beneficiary_notified=='Yes' && paitentRecord.InsurerVerified=='Yes' && paitentRecord.Funeralhome_notified=='Yes'">
+		<td>{{paitentRecord.pid}}</td>
+                <td>{{paitentRecord.pname}}</td>
+                <td>{{paitentRecord.address}}</td>
+                <td>{{paitentRecord.dod}}</td>
+                <td>{{paitentRecord.SSN}}</td>
+                <td>{{paitentRecord.Policyno}}</td>
+                <td>{{paitentRecord.Beneficiary_name<br><span class="green">Notified</span></td>
+                <td>{{paitentRecord.InsurerVerified}}</td>
+                <td>{{paitentRecord.funeralhome}}</td>
+                <td>{{paitentRecord.Hospital}}</td>
+                <td>
+		     <input type="submit" value="Update" ng-click="requestcert(paitentRecord)">
+		</td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="dashboard_right tabcontent"  id="tabs-5" >
+      <h3>Certification Provider &nbsp; &nbsp; <a href="" ng-click="getAllPatientform()" class="fas fa-sync"></a></h3>
       <div class="col-md-12">
         <table>
           <tbody>
@@ -152,409 +263,24 @@
               <th>Hospital</th>
               <th>&nbsp;</th>
             </tr>
-            <tr>
-              <td>C54286</td>
-              <td>Tony B</td>
-              <td>8257 Depot Lane 
-          Norwich, CT 06360</td>
-                <td>Jan 24, 19</td>
-                <td>AAA-GG-SSSS</td>
-                <td>254322</td>
-                <td>Samual B<br><span class="green">Notified</span></td>
-                <td>Claimed</td>
-                <td>393 Wakehurst St. 
-          Mchenry, IL 60050</td>
-                <td>995 Ridgeview St. 
-          Saint Augustine, FL 32084</td>
-                <td><span class="green">Certificate Provided</span>
-                <span class="red">Insurer Not Verified</span>
-                <span class="green">Certificate Provided</span></td>
-            </tr>
-            <tr>
-              <td>C54286</td>
-              <td>Tony B</td>
-              <td>8257 Depot Lane 
-          Norwich, CT 06360</td>
-                <td>Jan 24, 19</td>
-                <td>AAA-GG-SSSS</td>
-                <td>254322</td>
-                <td>Samual B<br><span class="green">Notified</span></td>
-                <td>Claimed</td>
-                <td>393 Wakehurst St. 
-          Mchenry, IL 60050</td>
-                <td>995 Ridgeview St. 
-          Saint Augustine, FL 32084</td>
-                <td><span class="green">Certificate Provided</span>
-                <span class="red">Insurer Not Verified</span>
-                <span class="green">Certificate Provided</span></td>
+	     <tr ng-repeat="paitentRecord in allPaitentRecord" ng-if="paitentRecord.Beneficiary_notified=='Yes' && paitentRecord.InsurerVerified=='Yes' && paitentRecord.Funeralhome_notified=='Yes' && paitentRecord.Cert_Requested=='Yes'">
+                <td>{{paitentRecord.pid}}</td>
+                <td>{{paitentRecord.pname}}</td>
+                <td>{{paitentRecord.address}}</td>
+                <td>{{paitentRecord.dod}}</td>
+                <td>{{paitentRecord.SSN}}</td>
+                <td>{{paitentRecord.Policyno}}</td>
+                <td>{{paitentRecord.Beneficiary_name<br><span class="green">Notified</span></td>
+                <td>{{paitentRecord.InsurerVerified}}</td>
+                <td>{{paitentRecord.funeralhome}}</td>
+                <td>{{paitentRecord.Hospital}}</td>
+                <td>
+                     <input type="submit" value="Update" ng-click="providecert(paitentRecord)">
+                </td>
               </tr>
-          </tbody>
+            </tbody>
         </table>
       </div>
-      <div class="col-md-3">
-        <label>Person ID</label>
-        <input type="text" value=" ">
-        <label>Date of Death</label>
-        <input type="date" value=" ">
-      </div>
-      <div class="col-md-3">
-        <label>Person Name</label>
-        <input type="text" value=" ">
-        <label>SSN</label>
-        <input type="text" value=" ">
-      </div>
-      <div class="col-md-6">
-        <label>Address</label>
-        <textarea></textarea>
-      </div>
-      <div class="clearfix"></div>
-      <div class="col-md-3">
-        <label>Policy Number</label>
-        <input type="text" value=" ">
-      </div>
-      <div class="col-md-3">
-        <label>Beneficiary Name</label>
-        <input type="text" value=" ">
-      </div>
-      <div class="col-md-3">
-        <label>Beneficiary Notified</label>
-        <span class="group">
-        <input type="radio" id="test1" name="radio-group_1" checked>
-        <label for="test1">Yes</label>
-        <input type="radio" id="test2" name="radio-group_1">
-        <label for="test2">No</label>
-        </span>
-      </div>
-      <div class="col-md-3">
-        <label>Cert. Provided</label>
-        <span class="group">
-        <input type="radio" id="test3" name="radio-group_2" checked>
-        <label for="test3">Yes</label>
-        <input type="radio" id="test4" name="radio-group_2">
-        <label for="test4">No</label>
-        </span>
-      </div>
-      <div class="clearfix"></div>
-      <div class="col-md-3">
-        <label>Funeral Home Notified</label>
-        <span class="group">
-        <input type="radio" id="test5" name="radio-group_3" checked>
-        <label for="test5">Yes</label>
-        <input type="radio" id="test6" name="radio-group_3">
-        <label for="test6">No</label>
-      </span>
-          <label>Funeral Home</label>
-          <input type="text" value=" ">
-        </div>
-        <div class="col-md-3">
-          <label>Insurer Verified</label>
-          <span class="group">
-          <input type="radio" id="test7" name="radio-group_4" checked>
-          <label for="test7">Yes</label>
-          <input type="radio" id="test8" name="radio-group_4">
-          <label for="test8">No</label>
-      </span>
-        <label>Hospital</label>
-        <input type="text" value=" ">
-      </div>
-      <div class="col-md-3">
-        <label>Claim Status</label>
-        <span class="group_chk">
-        <label class="checkstyle">Claimed
-          <input type="checkbox" checked="checked">
-          <span class="checkmark"></span> </label>
-        <label class="checkstyle">Not Claimed
-          <input type="checkbox">
-          <span class="checkmark"></span> </label>
-        <label class="checkstyle">Claim Requested
-          <input type="checkbox">
-          <span class="checkmark"></span> </label>
-		  </span>  
-      </div>
-      <div class="col-md-3">
-        <label>Cert. Requested</label>
-        <input type="text" value=" ">
-      </div>
-      <div class="clearfix"></div>
-      <div class="submit_block"></div>
-      <input type="submit" value="SUBMIT">
-      <div class="clearfix"></div>
-    </div>
-
-    <div class="dashboard_right tabcontent"  id="tabs-3" >
-      <h3>Beneficiary Event Recorded</h3>
-      <div class="col-md-3">
-        <label>Person ID</label>
-        <input type="text" value=" ">
-        <label>Date of Death</label>
-        <input type="date" value=" ">
-      </div>
-      <div class="col-md-3">
-        <label>Person Name</label>
-        <input type="text" value=" ">
-        <label>SSN</label>
-        <input type="text" value=" ">
-      </div>
-      <div class="col-md-6">
-        <label>Address</label>
-        <textarea></textarea>
-      </div>
-      <div class="clearfix"></div>
-      <div class="col-md-3">
-        <label>Policy Number</label>
-        <input type="text" value=" ">
-      </div>
-      <div class="col-md-3">
-        <label>Beneficiary Name</label>
-        <input type="text" value=" ">
-      </div>
-      <div class="col-md-3">
-        <label>Beneficiary Notified</label>
-        <span class="group">
-        <input type="radio" id="test1" name="radio-group_1" checked>
-        <label for="test1">Yes</label>
-        <input type="radio" id="test2" name="radio-group_1">
-        <label for="test2">No</label>
-        </span>
-      </div>
-      <div class="col-md-3">
-        <label>Cert. Provided</label>
-        <span class="group">
-        <input type="radio" id="test3" name="radio-group_2" checked>
-        <label for="test3">Yes</label>
-        <input type="radio" id="test4" name="radio-group_2">
-        <label for="test4">No</label>
-        </span>
-      </div>
-      <div class="clearfix"></div>
-      <div class="col-md-3">
-        <label>Funeral Home Notified</label>
-        <span class="group">
-        <input type="radio" id="test5" name="radio-group_3" checked>
-        <label for="test5">Yes</label>
-        <input type="radio" id="test6" name="radio-group_3">
-        <label for="test6">No</label>
-      </span>
-          <label>Funeral Home</label>
-          <input type="text" value=" ">
-        </div>
-        <div class="col-md-3">
-          <label>Insurer Verified</label>
-          <span class="group">
-          <input type="radio" id="test7" name="radio-group_4" checked>
-          <label for="test7">Yes</label>
-          <input type="radio" id="test8" name="radio-group_4">
-          <label for="test8">No</label>
-      </span>
-        <label>Hospital</label>
-        <input type="text" value=" ">
-      </div>
-      <div class="col-md-3">
-        <label>Claim Status</label>
-        <span class="group_chk">
-        <label class="checkstyle">Claimed
-          <input type="checkbox" checked="checked">
-          <span class="checkmark"></span> </label>
-        <label class="checkstyle">Not Claimed
-          <input type="checkbox">
-          <span class="checkmark"></span> </label>
-        <label class="checkstyle">Claim Requested
-          <input type="checkbox">
-          <span class="checkmark"></span> </label>
-		  </span>  
-      </div>
-      <div class="col-md-3">
-        <label>Cert. Requested</label>
-        <input type="text" value=" ">
-      </div>
-      <div class="clearfix"></div>
-      <div class="submit_block"></div>
-      <input type="submit" value="SUBMIT">
-      <div class="clearfix"></div>
-    </div>
-
-    <div class="dashboard_right tabcontent"  id="tabs-4" >
-      <h3>Funeral Home Event Recorded</h3>
-      <div class="col-md-3">
-        <label>Person ID</label>
-        <input type="text" value=" ">
-        <label>Date of Death</label>
-        <input type="date" value=" ">
-      </div>
-      <div class="col-md-3">
-        <label>Person Name</label>
-        <input type="text" value=" ">
-        <label>SSN</label>
-        <input type="text" value=" ">
-      </div>
-      <div class="col-md-6">
-        <label>Address</label>
-        <textarea></textarea>
-      </div>
-      <div class="clearfix"></div>
-      <div class="col-md-3">
-        <label>Policy Number</label>
-        <input type="text" value=" ">
-      </div>
-      <div class="col-md-3">
-        <label>Beneficiary Name</label>
-        <input type="text" value=" ">
-      </div>
-      <div class="col-md-3">
-        <label>Beneficiary Notified</label>
-        <span class="group">
-        <input type="radio" id="test1" name="radio-group_1" checked>
-        <label for="test1">Yes</label>
-        <input type="radio" id="test2" name="radio-group_1">
-        <label for="test2">No</label>
-        </span>
-      </div>
-      <div class="col-md-3">
-        <label>Cert. Provided</label>
-        <span class="group">
-        <input type="radio" id="test3" name="radio-group_2" checked>
-        <label for="test3">Yes</label>
-        <input type="radio" id="test4" name="radio-group_2">
-        <label for="test4">No</label>
-        </span>
-      </div>
-      <div class="clearfix"></div>
-      <div class="col-md-3">
-        <label>Funeral Home Notified</label>
-        <span class="group">
-        <input type="radio" id="test5" name="radio-group_3" checked>
-        <label for="test5">Yes</label>
-        <input type="radio" id="test6" name="radio-group_3">
-        <label for="test6">No</label>
-      </span>
-          <label>Funeral Home</label>
-          <input type="text" value=" ">
-        </div>
-        <div class="col-md-3">
-          <label>Insurer Verified</label>
-          <span class="group">
-          <input type="radio" id="test7" name="radio-group_4" checked>
-          <label for="test7">Yes</label>
-          <input type="radio" id="test8" name="radio-group_4">
-          <label for="test8">No</label>
-      </span>
-        <label>Hospital</label>
-        <input type="text" value=" ">
-      </div>
-      <div class="col-md-3">
-        <label>Claim Status</label>
-        <span class="group_chk">
-        <label class="checkstyle">Claimed
-          <input type="checkbox" checked="checked">
-          <span class="checkmark"></span> </label>
-        <label class="checkstyle">Not Claimed
-          <input type="checkbox">
-          <span class="checkmark"></span> </label>
-        <label class="checkstyle">Claim Requested
-          <input type="checkbox">
-          <span class="checkmark"></span> </label>
-		  </span>  
-      </div>
-      <div class="col-md-3">
-        <label>Cert. Requested</label>
-        <input type="text" value=" ">
-      </div>
-      <div class="clearfix"></div>
-      <div class="submit_block"></div>
-      <input type="submit" value="SUBMIT">
-      <div class="clearfix"></div>
-    </div>
-
-    <div class="dashboard_right tabcontent"  id="tabs-5" >
-      <h3>Certification Provider Event Recorded</h3>
-      <div class="col-md-3">
-        <label>Person ID</label>
-        <input type="text" value=" ">
-        <label>Date of Death</label>
-        <input type="date" value=" ">
-      </div>
-      <div class="col-md-3">
-        <label>Person Name</label>
-        <input type="text" value=" ">
-        <label>SSN</label>
-        <input type="text" value=" ">
-      </div>
-      <div class="col-md-6">
-        <label>Address</label>
-        <textarea></textarea>
-      </div>
-      <div class="clearfix"></div>
-      <div class="col-md-3">
-        <label>Policy Number</label>
-        <input type="text" value=" ">
-      </div>
-      <div class="col-md-3">
-        <label>Beneficiary Name</label>
-        <input type="text" value=" ">
-      </div>
-      <div class="col-md-3">
-        <label>Beneficiary Notified</label>
-        <span class="group">
-        <input type="radio" id="test1" name="radio-group_1" checked>
-        <label for="test1">Yes</label>
-        <input type="radio" id="test2" name="radio-group_1">
-        <label for="test2">No</label>
-        </span>
-      </div>
-      <div class="col-md-3">
-        <label>Cert. Provided</label>
-        <span class="group">
-        <input type="radio" id="test3" name="radio-group_2" checked>
-        <label for="test3">Yes</label>
-        <input type="radio" id="test4" name="radio-group_2">
-        <label for="test4">No</label>
-        </span>
-      </div>
-      <div class="clearfix"></div>
-      <div class="col-md-3">
-        <label>Funeral Home Notified</label>
-        <span class="group">
-        <input type="radio" id="test5" name="radio-group_3" checked>
-        <label for="test5">Yes</label>
-        <input type="radio" id="test6" name="radio-group_3">
-        <label for="test6">No</label>
-      </span>
-          <label>Funeral Home</label>
-          <input type="text" value=" ">
-        </div>
-        <div class="col-md-3">
-          <label>Insurer Verified</label>
-          <span class="group">
-          <input type="radio" id="test7" name="radio-group_4" checked>
-          <label for="test7">Yes</label>
-          <input type="radio" id="test8" name="radio-group_4">
-          <label for="test8">No</label>
-      </span>
-        <label>Hospital</label>
-        <input type="text" value=" ">
-      </div>
-      <div class="col-md-3">
-        <label>Claim Status</label>
-        <span class="group_chk">
-        <label class="checkstyle">Claimed
-          <input type="checkbox" checked="checked">
-          <span class="checkmark"></span> </label>
-        <label class="checkstyle">Not Claimed
-          <input type="checkbox">
-          <span class="checkmark"></span> </label>
-        <label class="checkstyle">Claim Requested
-          <input type="checkbox">
-          <span class="checkmark"></span> </label>
-		  </span>  
-      </div>
-      <div class="col-md-3">
-        <label>Cert. Requested</label>
-        <input type="text" value=" ">
-      </div>
-      <div class="clearfix"></div>
-      <div class="submit_block"></div>
-      <input type="submit" value="SUBMIT">
-      <div class="clearfix"></div>
     </div>
 
     <div class="clearfix"></div>
@@ -564,7 +290,6 @@
   <!-- Footer Section starts here-->
   <footer class="footer">©  copyright 2018</footer>
   <!-- Footer Section ends here--> 
-  
 </div>
 <script>
 
@@ -609,3 +334,4 @@ document.getElementById("defaultOpen").click();
 </script>
 </body>
 </html>
+
