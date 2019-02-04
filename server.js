@@ -8,19 +8,115 @@ var axios = require("axios");
 
 
 app.use(bodyParser.json());
+
 app.use(bodyParser.urlencoded({
     extended: true
 }));
 
 app.use('/', express.static(__dirname + '/'));
+app.use('/', express.static(__dirname + '/registration'));
 
 app.get('/', function(req, res) {
-    console.log("Open index  page");
+    console.log("Open index page");
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 app.listen(port);
 console.log("server is up on port : "+port);
+
+
+
+app.post('/verifyBeneficiary', function (req, res) {
+
+    var data = {};
+
+    var headers = {
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        }
+    };
+	
+
+    var url = 'http://ec2-54-205-134-49.compute-1.amazonaws.com:8080/api/org.aetna.insurance.Beneficiary/'+req.body.bid;
+
+   verifyBeneficiary(url, headers).then(function (data) {
+        if (data.success) {
+            res.json({
+                success: true,
+                record: data.response
+            });
+	console.log(data);
+        } else res.json({
+            success: false,
+            message: data
+        });
+    });
+
+
+});
+
+var verifyBeneficiary = async (url, headers) => {
+    try {
+        var Beneficiary = await axios.get(url, headers);
+
+        console.log("Data fetched succesfully");
+        return ({
+            success: true,
+            response: Beneficiary.data
+        });
+    } catch (error) {
+        return ({
+            success: false,
+            message: error.toString()
+        });
+    }
+}
+
+
+app.post('/searchPatient', function (req, res) {
+
+    var data = {};
+
+    var headers = {
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        }
+    };
+
+    var url = 'http://ec2-54-205-134-49.compute-1.amazonaws.com:8080/api/org.aetna.insurance.Patientform/'+req.body.pid;
+	
+	
+   searchPatient(url, headers).then(function (data) {
+        if (data.success) {
+            res.json({
+                success: true,
+                record: data.response
+            });
+        } else res.json({
+            success: false,
+            message: data
+        });
+    });
+
+
+});
+
+var searchPatient = async (url, headers) => {
+    try {
+        var Paitent = await axios.get(url, headers);
+
+        console.log("Data fetched succesfully");
+        return ({
+            success: true,
+            response: Paitent.data
+        });
+    } catch (error) {
+        return ({
+            success: false,
+            message: error.data
+        });
+    }
+}
 
 
 app.post('/getAllBeneficiary', function (req, res) {
@@ -186,6 +282,7 @@ app.post('/getAllHospital', function (req, res) {
 var getAllHospital = async (url, headers) => {
     try {
         var hospital = await axios.get(url, headers);
+       
         console.log("Data fetched succesfully");
         return ({
             success: true,
@@ -297,7 +394,7 @@ app.post('/addDeathRecord', function (req, res) {
         }
     };
 
-  var url = 'http://ec2-54-205-134-49.compute-1.amazonaws.com:8080/api/org.aetna.insurance.Patientform';
+  var url = 'http://ec2-54-205-134-49.compute-1.amazonaws.com:8080/api/org.aetna.insurance.PatientRegistration';
 
     addDeathRecord(url, reqdata, headers).then(function (data) {
         if (data.success) {
@@ -470,7 +567,7 @@ app.post('/providecert' , function (req, res) {
 
   var url = 'http://ec2-54-205-134-49.compute-1.amazonaws.com:8080/api/org.aetna.insurance.providecert';
 
-    requestcert(url, reqdata, headers).then(function (data) {
+    providecert(url, reqdata, headers).then(function (data) {
         if (data.success) {
             res.json({
                 success: true,
@@ -544,4 +641,43 @@ var claiminitiation = async (url, data, headers) => {
     }
 }
 
+app.post('/addParticipants' , function (req, res) {
+
+  var reqdata = req.body.data;
+  var url  = req.body.url;
+
+  var headers = {
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        }
+    };
+
+ addParticipants(url, reqdata, headers).then(function (data) {
+        if (data.success) {
+            res.json({
+                success: true,
+                RecordDetails: data.response
+            });
+        } else res.json({
+            success: false,
+            message: data
+        });
+    });
+});
+
+var addParticipants = async (url, data, headers) => {
+   try {
+        var Record = await axios.post(url,data);
+        console.log("Data post succesfully");
+        return ({
+            success: true,
+            response: Record.data
+        });
+    } catch(error){
+        return ({
+            success: false,
+            message: error
+        });
+    }
+}
 

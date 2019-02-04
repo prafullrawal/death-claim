@@ -11,6 +11,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
+<!-- for dataTable -->
+<link rel="stylesheet" href="https://unpkg.com/ng-table@3.0.1/bundles/ng-table.min.css">
+<script src="https://unpkg.com/ng-table@3.0.1/bundles/ng-table.min.js"></script>
+
 
 <script src="app.js"></script> 
 <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
@@ -48,35 +52,54 @@
         <li><a href="#tabs-3"   onclick="openCity(event, 'tabs-3')"class="tablinks" >Beneficiary<span class="benificery">&nbsp;</span></a></li>
         <li><a href="#tabs-4" onclick="openCity(event, 'tabs-4')" class="tablinks">Funeral Home<span class="funeral">&nbsp;</span></a></li>
         <li><a href="#tabs-5" onclick="openCity(event, 'tabs-5')" class="tablinks">Certification Provider<span class="certificate">&nbsp;</span></a></li>
+	<li><a href="#tabs-6" onclick="openCity(event, 'tabs-6')" class="tablinks"> Dashboard <span class="hospital">&nbsp;</span></a></li>
+	<li><a  href="./registration/register.html" target="_blank" >Network admin &nbsp; &nbsp; <i class="far fa-arrow-alt-circle-right"></i></a></li>
       </ul>
     </div>
 
     <div class="dashboard_right tabcontent" id="tabs-1" >
-      <h3>Death Event Recorded</h3>
-    <form>  
+   
+        <h3>Death Event Recorded </h3> 
+		
+	<span style="margin-bottom: 20px;"> <h6>( * Denotes required field )</h6></span>
 
+       
+	<div class="row">
+    	   <div class="col-md-3">
+            <label class="required">Beneficiary ID</label>	
+              <form><input id="benificaryId" type="text" ng-model="addPaitentData.bid" required="true" ng-blur="verifyBeneficiary(addPaitentData.bid)"  value=" " placeholder="Ex 1548678580199"></input></form>
+        </div>
+        <div class="col-md-3">
+            <label class="required">Benificiary Name</label>
+             <input id="beniname" ng-disabled="true" type="text" required="true"  ng-model="addPaitentData.verifiedBName" value='addPaitentData.verifiedBName'>
+        </div>
+      </div>
+      
+	<div class="submit_block"></div> 
+      <form>
       <div class="row">      	
        <div class="col-md-3">
-	<label>Hospital</label>
-          <input id="hospital" type="text" disabled  name="Apollo"  value="Apollo"  ></input>
-        <label>Date of Death</label>
-         <input type="date" ng-model="data.deathOfDeath" value=" " required="true">
+	<label class="required">Hospital</label>
+         <select id="hospitalId"  required="true"  class="options" ng-model="addPaitentData.hospitalName"><option ng-repeat="hospital in allHospitals" required="true"   value="{{hospital.hid}}+{{hospital.name}}">{{hospital.name}}</option> </select>
+        <label class="required">Date of Death</label>
+         <input type="date" ng-model="addPaitentData.deathOfDeath" value=" " required="true">
        </div> 
      
        <div class="col-md-3">
-        <label>Person Name</label>
-          <input type="text" ng-model="data.personName"  value=" " required="true">
-        <label>SSN</label>
-          <input type="text" ng-model="data.SSNo"  value=" " required="true" placeholder="Ex  123-41-2345">
+        <label class="required">Person Name</label>
+          <input type="text" ng-model="addPaitentData.personName"  value=" " required="true">
+        <label class="required">SSN</label>
+          <input type="text" ng-model="addPaitentData.SSNo"  value=" " required="true" placeholder="Ex  123-41-2345">
        </div>
       </div>
+
       <div class="col-md-6">
-        <label>Address</label>
-        <textarea ng-model="data.address" required="true"></textarea>
+        <label class="required">Address</label>
+        <textarea ng-model="addPaitentData.address" required="true"></textarea>
       </div>
       <div class="clearfix"></div>
       <div class="submit_block"></div>
-      <input type="submit" value="SUBMIT" ng-click="postDeathRecord(data)"></input>
+      <input type="submit" value="SUBMIT" ng-click="postDeathRecord(addPaitentData)"></input>
       <div class="clearfix"></div> 
     </form> 
    </div>	
@@ -84,7 +107,7 @@
     <div class="dashboard_right tabcontent"  id="tabs-2" >
       <h3>Insurer( verify SSN and notify to beneficiary ) &nbsp; &nbsp; <a href="" class="fas fa-sync" ng-click="getAllPatientform()"></a></h3>
       <div class="col-md-12">
-        <table>
+        <table ng-table="tableParams">
           <tbody>
             <tr>
               <th>Person ID</th>
@@ -96,7 +119,7 @@
               <th>Beneficiary Notified</th>
               <th>&nbsp;</th>
             </tr>
-            <tr ng-repeat="paitentRecord in allPaitentRecord" ng-if="paitentRecord.Beneficiary_notified=='No' || paitentRecord.Cert_Provided=='Yes'">
+            <tr ng-repeat="paitentRecord in $data" ng-if="paitentRecord.Beneficiary_notified=='No' || paitentRecord.Cert_Provided=='YES' && paitentRecord.Claimstatus=='No' ">
               <td>{{paitentRecord.pid}}</td>
               <td>{{paitentRecord.pname}}</td>
               <td>{{paitentRecord.address}}</td>
@@ -104,10 +127,11 @@
               <td>{{paitentRecord.SSN}}</td>
               <td>{{paitentRecord.Hospital}}</td>
               <td>{{paitentRecord.Beneficiary_notified}}<br><span ng-if="paitentRecord.Beneficiary_notified=='No'"  class="red">Insurer Not Verified</span></td>
-              <td>  
+              <td> 
+	      <form> 
               <div ng-if="paitentRecord.Beneficiary_notified=='No'"> 
 			<!-- Button trigger modal -->
-                    <input type="submit" value="Verify and Notify" data-toggle="modal" data-target="#exampleModalCenter{{paitentRecord.pid}}">
+                    <input type="submit" value="Verify and Notify" id="mymodel"  data-toggle="modal" data-target="#exampleModalCenter{{paitentRecord.pid}}">
 
                     <!-- Modal -->
                     <div class="modal fade bd-example-modal-lg" id="exampleModalCenter{{paitentRecord.pid}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -133,11 +157,7 @@
                                     <th>
                                         <input type="text" class="col-md-6"  ng-model="paitentRecord.policyNo"  value="" required="true">
                                     </th>
-                                    <th>
-                                        <select  name="Beneficiary Name" ng-model="paitentRecord.beneficiaryName">
-                                            <option selected value="1548678580199">same</option>
-                                        </select>
-                                    </th>
+                                    <th>{{paitentRecord.Beneficiary_name}}</th>
                                 </tr>
                             </tbody>
                         </table>
@@ -152,8 +172,8 @@
                         </div>
                     </div>
 		</div>
-		
-		<div ng-if="paitentRecord.Cert_Provided=='Yes'">
+		</form>
+		<div ng-if="paitentRecord.Cert_Provided=='YES' && paitentRecord.Claimstatus=='No'">
 		   
 		   <input type="submit" value="Claim granted" ng-click="claiminitiation(paitentRecord)">
 		  
@@ -170,7 +190,7 @@
     <div class="dashboard_right tabcontent"  id="tabs-3" >
       <h3>Beneficiary ( Select funeral home ) &nbsp; &nbsp; <a href="" ng-click="getAllPatientform()"  class="fas fa-sync"></a></h3>
       <div class="col-md-12">
-        <table>
+        <table ng-table="tableParams">
           <tbody>
             <tr>
               <th>Person ID</th>
@@ -184,21 +204,20 @@
               <th>Hospital</th>
               <th>&nbsp;</th>
             </tr>
-            <tr ng-repeat="paitentRecord in allPaitentRecord" ng-if="paitentRecord.Beneficiary_notified=='Yes'">
-       		<td>{{paitentRecord.pid}}</td>
-                <td>{{paitentRecord.pname}}</td>
-                <td>{{paitentRecord.address}}</td>
-                <td>{{paitentRecord.dod}}</td>
-                <td>{{paitentRecord.SSN}}</td>
-                <td>{{paitentRecord.Policyno}}</td>
-                <td>{{paitentRecord.Beneficiary_notified}}<br><span class="green">Notified</span></td>
-                <td><select  name="Funeral Homes" ng-model="paitentRecord.funeralHome">
-                        <option value="1548678755075">Star</option>
-                    </select>
-                </td>
-                <td>{{paitentRecord.Hospital}}</td>
+            <tr ng-repeat="bPaitentRecord in $data"  ng-if="bPaitentRecord.Beneficiary_notified=='YES' && bPaitentRecord.Funeralhome_notified=='No'">
+       		<td>{{bPaitentRecord.pid}}</td>
+                <td>{{bPaitentRecord.pname}}</td>
+                <td>{{bPaitentRecord.address}}</td>
+                <td>{{bPaitentRecord.dod}}</td>
+                <td>{{bPaitentRecord.SSN}}</td>
+                <td>{{bPaitentRecord.Policyno}}</td>
+                <td>{{bPaitentRecord.Beneficiary_notified}}<br><span class="green">Notified</span></td>
                 <td>
-                     <input type="submit" value="Update" ng-click="Beneficiaryupdate(paitentRecord)">     
+                    <select id="fhomeId" required="true"  class="options" ng-model="bPaitentRecord.fhid"><option ng-repeat="funeralhome in allFuneralHomes" required="true"   value="{{funeralhome.fhid}}">{{funeralhome.name}}</option> </select>
+                </td>
+                <td>{{bPaitentRecord.Hospital}}</td>
+                <td>
+                     <input type="submit" value="Update" ng-click="Beneficiaryupdate(bPaitentRecord)">     
                 </td>
               </tr>
           </tbody>
@@ -210,7 +229,7 @@
       <h3>Funeral Home ( verify & request for death certificate ) &nbsp; &nbsp; <a  href="" ng-click="getAllPatientform()" class="fas fa-sync"></a></h3>
 
       <div class="col-md-12">
-        <table>
+        <table ng-table="tableParams">
           <tbody>
             <tr>
               <th>Person ID</th>
@@ -225,14 +244,14 @@
               <th>Hospital</th>
               <th>&nbsp;</th>
             </tr>
-            <tr ng-repeat="paitentRecord in allPaitentRecord" ng-if="paitentRecord.Beneficiary_notified=='Yes' && paitentRecord.InsurerVerified=='Yes' && paitentRecord.Funeralhome_notified=='Yes'">
+            <tr ng-repeat="paitentRecord in $data" ng-if="paitentRecord.Beneficiary_notified=='YES' && paitentRecord.InsurerVerified=='YES' && paitentRecord.Funeralhome_notified=='YES' && paitentRecord.Cert_Requested=='No'">
 		<td>{{paitentRecord.pid}}</td>
                 <td>{{paitentRecord.pname}}</td>
                 <td>{{paitentRecord.address}}</td>
                 <td>{{paitentRecord.dod}}</td>
                 <td>{{paitentRecord.SSN}}</td>
                 <td>{{paitentRecord.Policyno}}</td>
-                <td>{{paitentRecord.Beneficiary_name<br><span class="green">Notified</span></td>
+                <td>{{paitentRecord.Beneficiary_name}}<br><span class="green">Notified</span></td>
                 <td>{{paitentRecord.InsurerVerified}}</td>
                 <td>{{paitentRecord.funeralhome}}</td>
                 <td>{{paitentRecord.Hospital}}</td>
@@ -248,7 +267,7 @@
     <div class="dashboard_right tabcontent"  id="tabs-5" >
       <h3>Certification Provider &nbsp; &nbsp; <a href="" ng-click="getAllPatientform()" class="fas fa-sync"></a></h3>
       <div class="col-md-12">
-        <table>
+        <table ng-table="tableParams">
           <tbody>
             <tr>
               <th>Person ID</th>
@@ -263,14 +282,14 @@
               <th>Hospital</th>
               <th>&nbsp;</th>
             </tr>
-	     <tr ng-repeat="paitentRecord in allPaitentRecord" ng-if="paitentRecord.Beneficiary_notified=='Yes' && paitentRecord.InsurerVerified=='Yes' && paitentRecord.Funeralhome_notified=='Yes' && paitentRecord.Cert_Requested=='Yes'">
+	     <tr ng-repeat="paitentRecord in $data" ng-if="paitentRecord.Beneficiary_notified=='YES' && paitentRecord.InsurerVerified=='YES' && paitentRecord.Funeralhome_notified=='YES' && paitentRecord.Cert_Requested=='YES' && paitentRecord.Cert_Provided=='No'">
                 <td>{{paitentRecord.pid}}</td>
                 <td>{{paitentRecord.pname}}</td>
                 <td>{{paitentRecord.address}}</td>
                 <td>{{paitentRecord.dod}}</td>
                 <td>{{paitentRecord.SSN}}</td>
                 <td>{{paitentRecord.Policyno}}</td>
-                <td>{{paitentRecord.Beneficiary_name<br><span class="green">Notified</span></td>
+                <td>{{paitentRecord.Beneficiary_name}}<br><span class="green">Notified</span></td>
                 <td>{{paitentRecord.InsurerVerified}}</td>
                 <td>{{paitentRecord.funeralhome}}</td>
                 <td>{{paitentRecord.Hospital}}</td>
@@ -280,9 +299,109 @@
               </tr>
             </tbody>
         </table>
+	<div class="clearfix"></div>
       </div>
     </div>
+    <div class="dashboard_right tabcontent" id="tabs-6">
+        <h3>All paitent record & status </h3> 
+	<span style="margin-bottom: 20px;"> <h6>( * Denotes required field )</h6></span>
+	<div class="row">
+    	   <div class="col-md-3">  	
+	    <form>	
+            <label class="required">Paitent ID</label>	
+              <input  type="text" ng-model="searchPaitent.bid" required="true" value=" " placeholder="Ex 1548678580199">
+           </div> 
+	   <input type="button" value="Search" ng-click="searchPaitentRecord(searchPaitent.bid)">
+	  </form>
+         
+	<div class="col-md-12">
+         <table class="table">
+          <tbody>
+            <tr>
+              <th>Person</br>ID</th>
+              <th>Person</br>Name</th>
+              <th>Address</th>
+              <th>Date of Death</th>
+              <th>SSN</th>
+              <th>Policy</br>Number</th>
+	      <th>Hospital</th>
+	      <th>Beneficiary</br>Notified</th>
+              <th>Beneficiary<br>Name</th>
+              <th>Funeral</br>Home</th>
+              <th>Funeralhome</br>Notified</th>
+	      <th>Insurer<br>Verified</td>
+	      <td>Certificate</br> Requested</td>
+              <th>Certificate</br>Provided</th>
+	      <th>Claim Status</th>
+            </tr>
+	    <tr>
+              <th>{{spaitentRecord.pid}}</th>
+              <th>{{spaitentRecord.pname}}</th>
+              <th>{{spaitentRecord.address}}</th>
+              <th>{{spaitentRecord.dod}}</th>
+              <th>{{spaitentRecord.SSN}}</th>
+              <th>{{spaitentRecord.Policyno}}</th>
+              <th>{{spaitentRecord.Hospital}}</th>
+              <th>{{spaitentRecord.Beneficiary_notified}}</th>
+              <th>{{spaitentRecord.Beneficiary_name}}</th>
+              <th>{{spaitentRecord.funeralhome}}</th>
+              <th>{{spaitentRecord.Funeralhome_notified }}</th>
+              <th>{{spaitentRecord.InsurerVerified}}</td>
+              <th>{{spaitentRecord.Cert_Requested}}</th>
+              <th>{{spaitentRecord.Cert_Provided}}</th> 
+	      <th>{{spaitentRecord.Claimstatus}}</th>	
+            </tr> 
+            </tbody>
+         </table>
+	 <div class="clearfix"></div>
+      </div>   
+     </div> 	 
 
+<!--    <div class="submit_block"></div> --> 
+   
+    <div class="col-md-12">
+       <span style="margin-bottom: 20px;margin-top: 38px;"> <h4> All Paitent record &nbsp; &nbsp; <a href="" class="fas fa-sync" ng-click="getAllPatientform()"></a> </h4></span> 
+        <table class="table" ng-table="tableParamsAllPaitents">
+          <tbody>
+            <tr>
+              <th>Person</br>ID</th>
+              <th>Person</br>Name</th>
+              <th>Address</th>
+              <th>Date of Death</th>
+              <th>SSN</th>
+              <th>Policy</br>Number</th>
+              <th>Hospital</th>
+              <th>Beneficiary</br>Notified</th>
+              <th>Beneficiary<br>Name</th>
+              <th>Funeral</br>Home</th>
+              <th>Funeralhome</br>Notified</th>
+              <th>Insurer<br>Verified</td>
+              <td>Certificate</br> Requested</td>
+              <th>Certificate</br>Provided</th>
+              <th>Claim Status</th>
+            </tr>
+            <tr ng-repeat="allpaitentRecord in $data">
+              <th>{{allpaitentRecord.pid}}</th>
+              <th>{{allpaitentRecord.pname}}</th>
+              <th>{{allpaitentRecord.address}}</th>
+              <th>{{allpaitentRecord.dod}}</th>
+              <th>{{allpaitentRecord.SSN}}</th>
+              <th>{{allpaitentRecord.Policyno}}</th>
+              <th>{{allpaitentRecord.Hospital}}</th>
+              <th>{{allpaitentRecord.Beneficiary_notified}}</th>
+              <th>{{allpaitentRecord.Beneficiary_name}}</th>
+              <th>{{allpaitentRecord.funeralhome}}</th>
+              <th>{{allpaitentRecord.Funeralhome_notified }}</th>
+              <th>{{allpaitentRecord.InsurerVerified}}</td>
+              <th>{{allpaitentRecord.Cert_Requested}}</th>
+              <th>{{allpaitentRecord.Cert_Provided}}</th>
+              <th>{{allpaitentRecord.Claimstatus}}</th>
+            </tr>
+           </tbody> 
+        </table>
+	<div class="clearfix"></div>
+       </div>	
+    </div>	 
     <div class="clearfix"></div>
   </div>
   <!-- Content Section ends here--> 
@@ -330,6 +449,16 @@
 }
 
 document.getElementById("defaultOpen").click();
+
+window.onload = function () {
+    angular.element(document.getElementById('hospitalId')).scope().init();
+}
+
+function getPaitentThenFuneralHome()
+{
+	angular.element(document).scope().init();
+}
+
 
 </script>
 </body>
