@@ -1619,3 +1619,867 @@ Unhandled error for request GET /manager/html: Error: Cannot GET /manager/html
     at Function.process_params (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:335:12)
     at next (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:275:10)
     at urlencodedParser (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+Discovering types from business network definition ...
+Connection fails: Error: Error trying to ping. Error: make sure the chaincode life-insurance has been successfully instantiated and try again: getccdata composerchannel/life-insurance responded with error: transaction not found: GET_STATE failed: transaction ID: 4826242148c793c721d33a03f82bbc882a9b9c0d028352f15022f315b3951585: Get http://couchdb:5984/composerchannel_lscc/life-insurance?attachments=true: dial tcp: lookup couchdb on 127.0.0.11:53: no such host
+It will be retried for the next request.
+Exception: Error: Error trying to ping. Error: make sure the chaincode life-insurance has been successfully instantiated and try again: getccdata composerchannel/life-insurance responded with error: transaction not found: GET_STATE failed: transaction ID: 4826242148c793c721d33a03f82bbc882a9b9c0d028352f15022f315b3951585: Get http://couchdb:5984/composerchannel_lscc/life-insurance?attachments=true: dial tcp: lookup couchdb on 127.0.0.11:53: no such host
+Error: Error trying to ping. Error: make sure the chaincode life-insurance has been successfully instantiated and try again: getccdata composerchannel/life-insurance responded with error: transaction not found: GET_STATE failed: transaction ID: 4826242148c793c721d33a03f82bbc882a9b9c0d028352f15022f315b3951585: Get http://couchdb:5984/composerchannel_lscc/life-insurance?attachments=true: dial tcp: lookup couchdb on 127.0.0.11:53: no such host
+    at _checkRuntimeVersions.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:886:34)
+    at <anonymous>
+Discovering types from business network definition ...
+Connection fails: Error: Error trying to ping. Error: make sure the chaincode life-insurance has been successfully instantiated and try again: getccdata composerchannel/life-insurance responded with error: transaction not found: GET_STATE failed: transaction ID: 1dc433fd4b45a05cdfdc9e365f49822dd81a0b65f438bc1be34caaa14f83aab2: Get http://couchdb:5984/composerchannel_lscc/life-insurance?attachments=true: dial tcp: lookup couchdb on 127.0.0.11:53: no such host
+It will be retried for the next request.
+Exception: Error: Error trying to ping. Error: make sure the chaincode life-insurance has been successfully instantiated and try again: getccdata composerchannel/life-insurance responded with error: transaction not found: GET_STATE failed: transaction ID: 1dc433fd4b45a05cdfdc9e365f49822dd81a0b65f438bc1be34caaa14f83aab2: Get http://couchdb:5984/composerchannel_lscc/life-insurance?attachments=true: dial tcp: lookup couchdb on 127.0.0.11:53: no such host
+Error: Error trying to ping. Error: make sure the chaincode life-insurance has been successfully instantiated and try again: getccdata composerchannel/life-insurance responded with error: transaction not found: GET_STATE failed: transaction ID: 1dc433fd4b45a05cdfdc9e365f49822dd81a0b65f438bc1be34caaa14f83aab2: Get http://couchdb:5984/composerchannel_lscc/life-insurance?attachments=true: dial tcp: lookup couchdb on 127.0.0.11:53: no such host
+    at _checkRuntimeVersions.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:886:34)
+    at <anonymous>
+Discovering types from business network definition ...
+Connection fails: Error: Error trying to ping. Error: make sure the chaincode life-insurance has been successfully instantiated and try again: getccdata composerchannel/life-insurance responded with error: transaction not found: GET_STATE failed: transaction ID: 1a4ad2ac36b6a9efed5dffc1bf23654401bd163450918e76be5256949f735621: Get http://couchdb:5984/composerchannel_lscc/life-insurance?attachments=true: dial tcp: lookup couchdb on 127.0.0.11:53: no such host
+It will be retried for the next request.
+Exception: Error: Error trying to ping. Error: make sure the chaincode life-insurance has been successfully instantiated and try again: getccdata composerchannel/life-insurance responded with error: transaction not found: GET_STATE failed: transaction ID: 1a4ad2ac36b6a9efed5dffc1bf23654401bd163450918e76be5256949f735621: Get http://couchdb:5984/composerchannel_lscc/life-insurance?attachments=true: dial tcp: lookup couchdb on 127.0.0.11:53: no such host
+Error: Error trying to ping. Error: make sure the chaincode life-insurance has been successfully instantiated and try again: getccdata composerchannel/life-insurance responded with error: transaction not found: GET_STATE failed: transaction ID: 1a4ad2ac36b6a9efed5dffc1bf23654401bd163450918e76be5256949f735621: Get http://couchdb:5984/composerchannel_lscc/life-insurance?attachments=true: dial tcp: lookup couchdb on 127.0.0.11:53: no such host
+    at _checkRuntimeVersions.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:886:34)
+    at <anonymous>
+Discovering types from business network definition ...
+Connection fails: Error: Error trying to ping. Error: make sure the chaincode life-insurance has been successfully instantiated and try again: getccdata composerchannel/life-insurance responded with error: transaction not found: GET_STATE failed: transaction ID: 67a213d24661806d025c97aedcff3db231bcb28edfac03e9e4aa0906e0e75fd4: Get http://couchdb:5984/composerchannel_lscc/life-insurance?attachments=true: dial tcp: lookup couchdb on 127.0.0.11:53: no such host
+It will be retried for the next request.
+Exception: Error: Error trying to ping. Error: make sure the chaincode life-insurance has been successfully instantiated and try again: getccdata composerchannel/life-insurance responded with error: transaction not found: GET_STATE failed: transaction ID: 67a213d24661806d025c97aedcff3db231bcb28edfac03e9e4aa0906e0e75fd4: Get http://couchdb:5984/composerchannel_lscc/life-insurance?attachments=true: dial tcp: lookup couchdb on 127.0.0.11:53: no such host
+Error: Error trying to ping. Error: make sure the chaincode life-insurance has been successfully instantiated and try again: getccdata composerchannel/life-insurance responded with error: transaction not found: GET_STATE failed: transaction ID: 67a213d24661806d025c97aedcff3db231bcb28edfac03e9e4aa0906e0e75fd4: Get http://couchdb:5984/composerchannel_lscc/life-insurance?attachments=true: dial tcp: lookup couchdb on 127.0.0.11:53: no such host
+    at _checkRuntimeVersions.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:886:34)
+    at <anonymous>
+Discovering types from business network definition ...
+Connection fails: Error: Error trying to ping. Error: make sure the chaincode life-insurance has been successfully instantiated and try again: getccdata composerchannel/life-insurance responded with error: transaction not found: GET_STATE failed: transaction ID: a895f4941df3d36f8576ee0e92892a0cfd23739e7405670f76f871406350e51f: Get http://couchdb:5984/composerchannel_lscc/life-insurance?attachments=true: dial tcp: lookup couchdb on 127.0.0.11:53: no such host
+It will be retried for the next request.
+Exception: Error: Error trying to ping. Error: make sure the chaincode life-insurance has been successfully instantiated and try again: getccdata composerchannel/life-insurance responded with error: transaction not found: GET_STATE failed: transaction ID: a895f4941df3d36f8576ee0e92892a0cfd23739e7405670f76f871406350e51f: Get http://couchdb:5984/composerchannel_lscc/life-insurance?attachments=true: dial tcp: lookup couchdb on 127.0.0.11:53: no such host
+Error: Error trying to ping. Error: make sure the chaincode life-insurance has been successfully instantiated and try again: getccdata composerchannel/life-insurance responded with error: transaction not found: GET_STATE failed: transaction ID: a895f4941df3d36f8576ee0e92892a0cfd23739e7405670f76f871406350e51f: Get http://couchdb:5984/composerchannel_lscc/life-insurance?attachments=true: dial tcp: lookup couchdb on 127.0.0.11:53: no such host
+    at _checkRuntimeVersions.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:886:34)
+    at <anonymous>
+Discovering types from business network definition ...
+Connection fails: Error: Error trying to ping. Error: REQUEST_TIMEOUT
+It will be retried for the next request.
+Exception: Error: Error trying to ping. Error: REQUEST_TIMEOUT
+Error: Error trying to ping. Error: REQUEST_TIMEOUT
+    at _checkRuntimeVersions.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:886:34)
+    at <anonymous>
+Discovering types from business network definition ...
+Discovering types from business network definition ...
+Discovering types from business network definition ...
+Connection fails: Error: Error trying to ping. Error: REQUEST_TIMEOUT
+It will be retried for the next request.
+Exception: Error: Error trying to ping. Error: REQUEST_TIMEOUT
+Error: Error trying to ping. Error: REQUEST_TIMEOUT
+    at _checkRuntimeVersions.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:886:34)
+    at <anonymous>
+Discovering types from business network definition ...
+Discovering the Returning Transactions..
+Discovered types from business network definition
+Generating schemas for all types in business network definition ...
+Generated schemas for all types in business network definition
+Adding schemas for all types to Loopback ...
+Added schemas for all types to Loopback
+Web server listening at: http://localhost:3000
+Browse your REST API at http://localhost:3000/explorer
+Discovering types from business network definition ...
+Discovering the Returning Transactions..
+Discovered types from business network definition
+Generating schemas for all types in business network definition ...
+Generated schemas for all types in business network definition
+Adding schemas for all types to Loopback ...
+Added schemas for all types to Loopback
+Web server listening at: http://localhost:8080
+Browse your REST API at http://localhost:8080/explorer
+Unhandled error for request GET /api/org.aetna.insurance.Hospital: Error: failed to execute transaction d3449cbddcba878fd528ea41545a4822078223a3024afb03e131fa24bde4d57c: failed to register life-insurance:0.0.2-deploy.14 as launching: chaincode life-insurance:0.0.2-deploy.14 has already been launched
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/Peer.js:114:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/grpc/src/client.js:586:7
+Discovering types from business network definition ...
+Discovering the Returning Transactions..
+Discovered types from business network definition
+Generating schemas for all types in business network definition ...
+Generated schemas for all types in business network definition
+Adding schemas for all types to Loopback ...
+Added schemas for all types to Loopback
+Web server listening at: http://localhost:8080
+Browse your REST API at http://localhost:8080/explorer
+Discovering types from business network definition ...
+Discovering the Returning Transactions..
+Discovered types from business network definition
+Generating schemas for all types in business network definition ...
+Generated schemas for all types in business network definition
+Adding schemas for all types to Loopback ...
+Added schemas for all types to Loopback
+Web server listening at: http://localhost:8080
+Browse your REST API at http://localhost:8080/explorer
+Unhandled error for request GET /explore: Error: Cannot GET /explore
+    at raiseUrlNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/server/middleware/url-not-found.js:21:17)
+    at Layer.handle [as handle_request] (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:317:13)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:275:10)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:635:15
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:317:13)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+Unhandled error for request GET /manager/html: Error: Cannot GET /manager/html
+    at raiseUrlNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/server/middleware/url-not-found.js:21:17)
+    at Layer.handle [as handle_request] (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:317:13)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:275:10)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:635:15
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:317:13)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+WARNING: id property cannot be changed from 1548938878971 to 1548938878971 for model:org_aetna_insurance_Beneficiary in 'before save' operation hook
+WARNING: id property cannot be changed from 1548938878971 to 1548938878971 for model:org_aetna_insurance_Beneficiary in 'loaded' operation hook
+Discovering types from business network definition ...
+Discovering the Returning Transactions..
+Discovered types from business network definition
+Generating schemas for all types in business network definition ...
+Generated schemas for all types in business network definition
+Adding schemas for all types to Loopback ...
+Added schemas for all types to Loopback
+Web server listening at: http://localhost:8080
+Browse your REST API at http://localhost:8080/explorer
+Discovering types from business network definition ...
+Discovering the Returning Transactions..
+Discovered types from business network definition
+Generating schemas for all types in business network definition ...
+Generated schemas for all types in business network definition
+Adding schemas for all types to Loopback ...
+Added schemas for all types to Loopback
+Web server listening at: http://localhost:8080
+Browse your REST API at http://localhost:8080/explorer
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/,%20%7B%20%09%09%09%09%09%09%09%09%09%09%09%09offset:%20%7B%20%09%09%09%09%09%09%09%09%09%09%09%09%09x:15,%20%09%09%09%09%09%09%09%09%09%09%09%09%09y:400%20%09%09%09%09%09%09%09%09%09%09%09%09%7D%20%09%09%09%09%09%09%09%09%09%09%09%7D: Error: Unknown "org_aetna_insurance_Patientform" id ", { 												offset: { 													x:15, 													y:400 												} 											}".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/212: Error: Unknown "org_aetna_insurance_Patientform" id "212".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/212: Error: Unknown "org_aetna_insurance_Patientform" id "212".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/212: Error: Unknown "org_aetna_insurance_Patientform" id "212".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/21651: Error: Unknown "org_aetna_insurance_Patientform" id "21651".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/213546: Error: Unknown "org_aetna_insurance_Patientform" id "213546".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/213546: Error: Unknown "org_aetna_insurance_Patientform" id "213546".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/213546: Error: Unknown "org_aetna_insurance_Patientform" id "213546".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/213546: Error: Unknown "org_aetna_insurance_Patientform" id "213546".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/213546: Error: Unknown "org_aetna_insurance_Patientform" id "213546".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/213546: Error: Unknown "org_aetna_insurance_Patientform" id "213546".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/213546: Error: Unknown "org_aetna_insurance_Patientform" id "213546".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/213546: Error: Unknown "org_aetna_insurance_Patientform" id "213546".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/213546: Error: Unknown "org_aetna_insurance_Patientform" id "213546".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/213546: Error: Unknown "org_aetna_insurance_Patientform" id "213546".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/213546: Error: Unknown "org_aetna_insurance_Patientform" id "213546".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/qwerq: Error: Unknown "org_aetna_insurance_Patientform" id "qwerq".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/qwerq: Error: Unknown "org_aetna_insurance_Patientform" id "qwerq".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/qwerq: Error: Unknown "org_aetna_insurance_Patientform" id "qwerq".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/qwerq: Error: Unknown "org_aetna_insurance_Patientform" id "qwerq".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/qwerq: Error: Unknown "org_aetna_insurance_Patientform" id "qwerq".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/qwerq: Error: Unknown "org_aetna_insurance_Patientform" id "qwerq".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/qwerq: Error: Unknown "org_aetna_insurance_Patientform" id "qwerq".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/1234: Error: Unknown "org_aetna_insurance_Patientform" id "1234".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/1234: Error: Unknown "org_aetna_insurance_Patientform" id "1234".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /manager/html: Error: Cannot GET /manager/html
+    at raiseUrlNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/server/middleware/url-not-found.js:21:17)
+    at Layer.handle [as handle_request] (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:317:13)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:275:10)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:635:15
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:317:13)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/123425: Error: Unknown "org_aetna_insurance_Patientform" id "123425".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/21354: Error: Unknown "org_aetna_insurance_Patientform" id "21354".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/21354: Error: Unknown "org_aetna_insurance_Patientform" id "21354".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/21354: Error: Unknown "org_aetna_insurance_Patientform" id "21354".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/1234: Error: Unknown "org_aetna_insurance_Patientform" id "1234".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/qwreeqw: Error: Unknown "org_aetna_insurance_Patientform" id "qwreeqw".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/45684712: Error: Unknown "org_aetna_insurance_Patientform" id "45684712".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/1549017230998: Error: Unknown "org_aetna_insurance_Patientform" id "1549017230998".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/1549017230998: Error: Unknown "org_aetna_insurance_Patientform" id "1549017230998".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/1548938878971: Error: Unknown "org_aetna_insurance_Patientform" id "1548938878971".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Discovering types from business network definition ...
+Connection fails: Error: Error trying to ping. Error: make sure the chaincode life-insurance has been successfully instantiated and try again: getccdata composerchannel/life-insurance responded with error: could not find chaincode with name 'life-insurance'
+It will be retried for the next request.
+Exception: Error: Error trying to ping. Error: make sure the chaincode life-insurance has been successfully instantiated and try again: getccdata composerchannel/life-insurance responded with error: could not find chaincode with name 'life-insurance'
+Error: Error trying to ping. Error: make sure the chaincode life-insurance has been successfully instantiated and try again: getccdata composerchannel/life-insurance responded with error: could not find chaincode with name 'life-insurance'
+    at _checkRuntimeVersions.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:886:34)
+    at <anonymous>
+Discovering types from business network definition ...
+Connection fails: Error: Error trying to ping. Error: make sure the chaincode life-insurance has been successfully instantiated and try again: getccdata composerchannel/life-insurance responded with error: could not find chaincode with name 'life-insurance'
+It will be retried for the next request.
+Exception: Error: Error trying to ping. Error: make sure the chaincode life-insurance has been successfully instantiated and try again: getccdata composerchannel/life-insurance responded with error: could not find chaincode with name 'life-insurance'
+Error: Error trying to ping. Error: make sure the chaincode life-insurance has been successfully instantiated and try again: getccdata composerchannel/life-insurance responded with error: could not find chaincode with name 'life-insurance'
+    at _checkRuntimeVersions.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:886:34)
+    at <anonymous>
+Discovering types from business network definition ...
+Discovering the Returning Transactions..
+Discovered types from business network definition
+Generating schemas for all types in business network definition ...
+Generated schemas for all types in business network definition
+Adding schemas for all types to Loopback ...
+Added schemas for all types to Loopback
+Web server listening at: http://localhost:8080
+Browse your REST API at http://localhost:8080/explorer
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/1551417054757: Error: Unknown "org_aetna_insurance_Patientform" id "1551417054757".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+Unhandled error for request GET /robots.txt: Error: Cannot GET /robots.txt
+    at raiseUrlNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/server/middleware/url-not-found.js:21:17)
+    at Layer.handle [as handle_request] (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:317:13)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:275:10)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:635:15
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:317:13)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+Unhandled error for request GET /sitemap.xml: Error: Cannot GET /sitemap.xml
+    at raiseUrlNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/server/middleware/url-not-found.js:21:17)
+    at Layer.handle [as handle_request] (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:317:13)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:275:10)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:635:15
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:317:13)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+Unhandled error for request GET /.well-known/security.txt: Error: Cannot GET /.well-known/security.txt
+    at raiseUrlNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/server/middleware/url-not-found.js:21:17)
+    at Layer.handle [as handle_request] (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:317:13)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:275:10)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:635:15
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:174:3)
+    at router (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:317:13)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+Unhandled error for request GET /api/org.aetna.insurance.Patientform/1253154854: Error: Unknown "org_aetna_insurance_Patientform" id "1253154854".
+    at Function.convertNullToNotFoundError (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/loopback/lib/persisted-model.js:89:17)
+    at invokeRestAfter (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/rest-adapter.js:532:25)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3880:24
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1011:17)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:3885:13
+    at interceptInvocationErrors (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/lib/remote-objects.js:731:22)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:473:16
+    at replenish (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:1006:25)
+    at iterateeCallback (/home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:995:17)
+    at /home/ubuntu/.nvm/versions/node/v8.11.4/lib/node_modules/composer-rest-server/node_modules/strong-remoting/node_modules/async/dist/async.js:969:16

@@ -12,8 +12,8 @@ app.controller('myController', function($scope,$http,NgTableParams){
    // init funciton on page load
    $scope.init = function() {
 	
-	$scope.getAllHospital();
-	$scope.getAllFuneralHome();
+//	$scope.getAllHospital();
+//	$scope.getAllFuneralHome();
 		
    };
 	
@@ -47,7 +47,12 @@ app.controller('myController', function($scope,$http,NgTableParams){
                         icon: "fas fa-exclamation-triangle",
                         title: " Error !! ",
                         message: " Beneficiary not found please enter correct id."
-                },{type: "danger"});
+                },{type: "danger"}, {
+					offset:{
+						x:15,
+						y:400
+					}
+				});
             }
         });
 
@@ -63,6 +68,10 @@ app.controller('myController', function($scope,$http,NgTableParams){
            return null;
         }
 
+
+	var data = pid.split("+");
+	var pid = data[0];
+	var reqby = data[1];
         pid = pid.toString();
         var data = { "pid" : pid}
 	
@@ -75,8 +84,12 @@ app.controller('myController', function($scope,$http,NgTableParams){
         }).then(function successCallback(response) {
             if (response.data.success==true && response.status == 200) {
                 $("#cover-spin").hide();
-                $scope.spaitentRecord = response.data.record;
-		console.log($scope.spaitentRecord);
+
+		if(reqby=='fhome')
+			 $scope.fHomeSearchPaitentRecord = response.data.record;
+		if(reqby=='dboard')
+	                $scope.spaitentRecord = response.data.record;
+		
 		//$scope.tableParamsPsearch = new NgTableParams({count: 2}, {counts:[], dataset: $scope.paitentData});	        
 
             } else {
@@ -85,7 +98,13 @@ app.controller('myController', function($scope,$http,NgTableParams){
                         icon: "fas fa-exclamation-triangle",
                         title: "Error !!",
                         message: "Paitent not found please enter correct id."
-                },{type: "danger"});
+                },{
+               		type: "danger",
+			offset:{
+				x:15,
+				y:200
+			}
+		});
 
 		$scope.spaitentRecord = " ";
 
@@ -114,7 +133,14 @@ app.controller('myController', function($scope,$http,NgTableParams){
                         icon: "fas fa-exclamation-triangle",
                         title: "Error !!",
                         message: "Error!! Please contact system admin"
-                },{type: "danger"});
+                },{
+                        type: "danger",
+                        offset:{
+                                x:15,
+                                y:200
+                        }
+                });
+
             }
         });
     }
@@ -140,7 +166,14 @@ app.controller('myController', function($scope,$http,NgTableParams){
                         icon: "fas fa-exclamation-triangle",
                         title: "Error !!",
                         message: "Error!! Please contact system admin"
-                },{type: "danger"});
+                },{
+                        type: "danger",
+                        offset:{
+                                x:15,
+                                y:200
+                        }
+                });
+
             }
         });
 
@@ -168,7 +201,13 @@ app.controller('myController', function($scope,$http,NgTableParams){
                         icon: "fas fa-exclamation-triangle",
                         title: "Error !!",
                         message: "Please contact system admin"
-                },{type: "danger"});
+                },{
+                        type: "danger",
+                        offset:{
+                                x:15,
+                                y:200
+                        }
+                });
             }
         });
 
@@ -195,10 +234,15 @@ app.controller('myController', function($scope,$http,NgTableParams){
                         icon: "fas fa-exclamation-triangle",
                         title: "Error !!",
                         message: "Please contact system admin"
-                },{type: "danger"});
+                },{
+                        type: "danger",
+                        offset:{
+                                x:15,
+                                y:200
+                        }
+                });
             }
         });
-
     }
 
     $scope.getAllInsurer = function () {
@@ -222,7 +266,13 @@ app.controller('myController', function($scope,$http,NgTableParams){
                         icon: "fas fa-exclamation-triangle",
                         title: "Error !!",
                         message: "Please contact system admin"
-                },{type: "danger"});
+                },{
+                        type: "danger",
+                        offset:{
+                                x:15,
+                                y:200
+                        }
+                });
             }
         });
 
@@ -241,18 +291,24 @@ app.controller('myController', function($scope,$http,NgTableParams){
         }).then(function successCallback(response) {
             if (response.data.success==true && response.status == 200) {
                 $("#cover-spin").hide();
-		console.log(response.data.patientDetails);
+
 		$scope.allPaitentRecord = response.data.patientDetails;
 		$scope.tableParams = new NgTableParams({count: 10}, {counts:[], dataset: $scope.allPaitentRecord});
 		$scope.tableParamsAllPaitents = new NgTableParams({count: 5}, {counts:[], dataset: $scope.allPaitentRecord});
-		console.log($scope.tableParamsAllPaitents);
+
             } else {
 		$("#cover-spin").hide();
                 $.notify({
                         icon: "fas fa-exclamation-triangle",
                         title: "Error !!",
                         message: "Please contact system admin"
-                },{type: "danger"});
+                },{
+                        type: "danger",
+                        offset:{
+                                x:15,
+                                y:200
+                        }
+                });
             }
         });
 
@@ -264,7 +320,7 @@ app.controller('myController', function($scope,$http,NgTableParams){
 	console.log(deathRecordData);	
 
 		
-	if(deathRecordData!=undefined  &&  deathRecordData.personName!=undefined && deathRecordData.address !=undefined && deathRecordData.deathOfDeath != undefined && deathRecordData.SSNo != undefined && deathRecordData.hospitalName != undefined)
+	if(deathRecordData!=undefined  &&  deathRecordData.personName!=undefined && deathRecordData.address !=undefined && deathRecordData.deathOfDeath != undefined && deathRecordData.SSNo != undefined && deathRecordData.pid!=undefined)
 	{
  
 	var validateSSN = is_socialSecurity_Number(deathRecordData.SSNo);
@@ -277,9 +333,9 @@ app.controller('myController', function($scope,$http,NgTableParams){
 	else
 	{
 	
- 	var hospitalNameId = deathRecordData.hospitalName.split("+");
-	var hospitalName = hospitalNameId[1];
-	var hid = hospitalNameId[0]; 
+ 	//var hospitalNameId = deathRecordData.hospitalName.split("+");
+	//var hospitalName = hospitalNameId[1];
+	//var hid = hospitalNameId[0]; 
 	
         var pid = Date.now().toString();
         var options = { year: 'numeric', month: 'long', day: 'numeric' };		
@@ -295,18 +351,18 @@ app.controller('myController', function($scope,$http,NgTableParams){
                  	    "address": deathRecordData.address,
          	            "dod": date,
                 	    "SSN": deathRecordData.SSNo,
-			    "hid":hid,
-               		    "Hospital":hospitalName,
-			    "fhid":" ",
-			    "bid":deathRecordData.bid,
-          	            "Policyno":" ",
-                	    "Beneficiary_name":deathRecordData.verifiedBName,
+			    "hid":"1551416691476",
+               		    "Hospital":"Apollo",
+			    "fhid":"1551416896228",
+			    "bid":" ",
+          	            "Policyno":deathRecordData.pid,
+                	    "Beneficiary_name":" ",
                		    "Beneficiary_notified": "No",
           	            "Cert_Provided": "No",
        		            "Funeralhome_notified": "No",
                 	    "InsurerVerified": "No",
                 	    "Claimstatus": "No",
-              		    "funeralhome": " ",
+              		    "funeralhome":"445 Mount Eden, Auckland",
             	            "Cert_Requested": "No"
             	  	}
 		}
@@ -332,7 +388,12 @@ app.controller('myController', function($scope,$http,NgTableParams){
                         icon: "far fa-handshake",
                         title: "Success !!",
                         message: "Inserted record in ledger with unique Id : "+pid+" and TxId : "+response.data.deathRecordDetails.transactionId
-                });
+                }, {
+                                        offset:{
+                                                x:15,
+                                                y:200
+                                        }
+                                });
 			
             } else {
 		$("#cover-spin").hide();
@@ -340,7 +401,13 @@ app.controller('myController', function($scope,$http,NgTableParams){
                         icon: "fas fa-exclamation-triangle",
                         title: "Error !!",
                         message: " Please try again or contact system admin."
-                },{type: "danger"});
+                },{
+                        type: "danger",
+                        offset:{
+                                x:15,
+                                y:200
+                        }
+                });
             }
         });
 
@@ -396,14 +463,26 @@ app.controller('myController', function($scope,$http,NgTableParams){
                    			     icon: "far fa-handshake",
                 		             title: "Success !!",
         		                     message: "record successfully updated with tx id : "+response.data.verifyandNotifyBeneficiaryRecordDetails.transactionId
-               				 });
+               				 }, {
+                                        offset:{
+                                                x:15,
+                                                y:200
+                                        }
+                                });
            		 } else {
 				$("#cover-spin").hide();
                			$.notify({
                    		   	 icon: "fas fa-exclamation-triangle",
                        			 title: "Error !!",
                        			 message: "Please try again or contact system admin."
-               			 },{type: "danger"});
+               			},{
+		                        type: "danger",
+                		        offset:{
+                               			 x:15,
+                          		         y:200
+                       			 }
+               			 });
+
            		 }
        		 });
 
@@ -434,7 +513,12 @@ app.controller('myController', function($scope,$http,NgTableParams){
                                              icon: "far fa-handshake",
                                              title: "Success !!",
                                              message:"Record successfully updated with tx id : "+response.data.RecordDetails.transactionId
-                                         });
+                                         }, {
+                                        offset:{
+                                                x:15,
+                                                y:200
+                                        }
+                                });
 				   $scope.getAllPatientform();
                          } else {
 				$("#cover-spin").hide();
@@ -442,7 +526,14 @@ app.controller('myController', function($scope,$http,NgTableParams){
                    			     icon: "fas fa-exclamation-triangle",
                         		     title: "Error !!",
                      			     message: "Please try again or contact system admin."
-               				 },{type: "danger"});            
+               				 },{
+                		        	type: "danger",
+		                	        	offset:{
+                                				x:15,
+                                				y:200
+                        			}
+                			});
+
                        }
                  });
 
@@ -473,14 +564,25 @@ app.controller('myController', function($scope,$http,NgTableParams){
                                              icon: "far fa-handshake",
                                              title: "Success !!",
                                              message: "record successfully updated with tx id : "+response.data.RecordDetails.transactionId
-                                         });
+                                         }, {
+                                        offset:{
+                                                x:15,
+                                                y:200
+                                        }
+                                });
                          } else {
 				$("#cover-spin").hide();
 				$.notify({
                 		        icon: "fas fa-exclamation-triangle",
                  		        title: "Error !!",
                   		        message: "Please try again or contact system admin."
-               			 },{type: "danger"});
+               			 },{
+                                                type: "danger",
+                                                        offset:{
+                                                                x:15,
+                                                                y:200
+                                                }
+                                        });
                          }
                  });
 		
@@ -489,12 +591,16 @@ app.controller('myController', function($scope,$http,NgTableParams){
 	
 	$scope.claiminitiation = function(data) {
 	
-		console.log(data.pid);
+		var pid = data.pid;
+	
+		var bname = $('#bname'+pid).html();
+		
 		$("#cover-spin").show();
 
 		data = {
                        "$class": "org.aetna.insurance.claiminitiation",
                         "patientform": "resource:org.aetna.insurance.Patientform#"+data.pid,
+			"bname": bname
                 }
 
 
@@ -512,14 +618,27 @@ app.controller('myController', function($scope,$http,NgTableParams){
                                              icon: "far fa-handshake",
                                              title: "Success !!",
                                              message: "record successfully updated with tx id : "+response.data.RecordDetails.transactionId
-                                         });
+                                         }, {
+                                        offset:{
+                                                x:15,
+                                                y:200
+                                        }
+                                });
+				  $('.'+pid).modal('hide')
                          } else {
 				$("#cover-spin").hide();
+				$('.'+pid).modal('hide')
 				$.notify({
                    			     icon: "fas fa-exclamation-triangle",
                  		             title: "Error !!",
                     			     message: "Please try again or contact system admin."
-            			    },{type: "danger"});
+            			       },{
+                                                type: "danger",
+                                                        offset:{
+                                                                x:15,
+                                                                y:200
+                                                }
+                                        });
                          }
                  });
 
@@ -549,18 +668,137 @@ app.controller('myController', function($scope,$http,NgTableParams){
                                              icon: "far fa-handshake",
                                              title: "Success !!",
                                              message: "record successfully updated with tx id : "+response.data.RecordDetails.transactionId
-                                         });
+                                         }, {
+                                        offset:{
+                                                x:15,
+                                                y:200
+                                        }
+                                });
+				$scope.fHomeSearchPaitentRecord = '';
                          } else {
 				$("#cover-spin").hide();
 				$.notify({
                                              icon: "fas fa-exclamation-triangle",
                                              title: "Error !!",
                                              message: "Please try again or contact system admin."
-                                    },{type: "danger"});
+                                    },{
+                                                type: "danger",
+                                                        offset:{
+                                                                x:15,
+                                                                y:200
+                                                }
+                                        });
                          }
                  });
 
         }
+	
+	$scope.getPolicyDetails = function(data) {
+		
+	
+	var policyId = {
+			"data":data.Policyno
+		}
+	
+	
+		$("#cover-spin").show();
+	
+		$http({
+                            method: 'POST',
+                            url: '/getPolicyDetails',
+                            data: policyId
+                 }).then(function successCallback(response) {
+                         if (response.data.status == 200) {
+                                   $("#cover-spin").hide();
+                                   console.log(response);
 
+				$scope.insuranceBName = { 'bid':response.data.bid,'bname':response.data.bname}
+			
+
+                                   $.notify({
+                                             icon: "far fa-handshake",
+                                             title: "Success !!",
+                                             message: "Successfully verified given policy no."
+                                         }, {
+                                        offset:{
+                                                x:15,
+                                                y:200
+                                        }
+                                });
+				$('.'+data.pid).modal('show');
+				
+                         } else {
+                                $("#cover-spin").hide();
+                                $.notify({
+                                             icon: "fas fa-exclamation-triangle",
+                                             title: "Error !!",
+                                             message: "No record found with given Policy no : "+data.Policyno+"."
+                                    },{
+                                                type: "danger",
+                                                        offset:{
+                                                                x:15,
+                                                                y:200
+                                                }
+                                        });
+                         }
+                 });
+		
+	}
+
+
+	$scope.BeneficiaryIdProofupdate = function(data){
+
+		if(data.newbid==undefined || data.newbid==" "){alert("Please enter unique id");return null;}
+		                
+		data = 
+			{
+  				"$class": "org.aetna.insurance.updateBenificiaryIdentityProof",
+				"patientform": "resource:org.aetna.insurance.Patientform#"+data.pid,
+  				"bid": data.newbid
+			}	 
+		
+		console.log(data);
+
+                $("#cover-spin").show();
+		
+
+                $http({
+                            method: 'POST',
+                            url: '/BeneficiaryIdProofupdate',
+                            data: data
+                 }).then(function successCallback(response) {
+                         if (response.data.success) {
+                                   $("#cover-spin").hide();
+                       	           console.log(response);
+				   $scope.getAllPatientform();
+                                   $.notify({
+                                             icon: "far fa-handshake",
+                                             title: "Success !!",
+                                             message: "Unique updated successfully with tx no. :"+response.data.RecordDetails.transactionId
+                                         },{
+						offset: {
+							x:15,
+							y: 200
+						}
+					});
+			
+
+                         } else {
+                                $("#cover-spin").hide();
+                                $.notify({
+                                             icon: "fas fa-exclamation-triangle",
+                                             title: "Error !!",
+                                             message: "Please try again or contact system admin."
+                                      },{
+                                                type: "danger",
+                                                        offset:{
+                                                                x:15,
+                                                                y:200
+                                                }
+                                        });
+                         }
+                 });
+
+        }
 
 });	

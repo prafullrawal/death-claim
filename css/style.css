@@ -279,6 +279,22 @@ ul.left_menu li a.selected {
 	bottom: 0;
 	margin: auto;
 }
+
+.dashboard_icon {
+	font-size: 29px;
+        width: 30px;
+	height: 30px;
+        position: absolute;
+	right: 23px;
+	top: 8px;
+	bottom: 0px;
+}
+
+.refresh{
+	background : url(../images/loading.gif) no-repeat center center;
+
+}
+
 .grn {
 	position: absolute;
 	width: 4px;
@@ -527,4 +543,17 @@ input[type="button"]:hover {
 	background: #FFF;
 	border: 1px solid #39b54a;
 	color: #39b54a;
+}
+
+.floatleft{
+	float:left; 
+}
+
+.FHNotemsg{
+	margin-left: 14px;
+	margin-bottom: 17px;
+}
+
+.FHNotemsg p{
+	margin-left: 32px;
 }

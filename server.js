@@ -2,9 +2,17 @@ var express = require('express');
 var path = require('path');
 var fs = require("fs");
 var bodyParser = require('body-parser');
-var port = process.env.PORT || process.env.VCAP_APP_PORT || '3000';
+var port = process.env.PORT || process.env.VCAP_APP_PORT || '4000';
 var nano = require('nano')('http://localhost:'+port);var app = express();
 var axios = require("axios");
+
+var cloudantUserName = "97db821e-87a4-4507-b8ee-fcc95b72b447-bluemix";
+var cloudantPassword = "ae34609f865eac5720a3e08c9c0208840a9418090a98f9a4c1fcb9fa5573040b";
+var dbCredentials_url = "https://"+cloudantUserName+":"+cloudantPassword+"@"+cloudantUserName+".cloudant.com"; // Set this to your own account
+
+//Initialize the library with my account
+var cloudant = require('cloudant')(dbCredentials_url);
+var dbForLogin = cloudant.db.use("deathclaim");
 
 
 app.use(bodyParser.json());
@@ -119,7 +127,7 @@ var searchPatient = async (url, headers) => {
 }
 
 
-app.post('/getAllBeneficiary', function (req, res) {
+app.get('/getAllBeneficiary', function (req, res) {
 
     var data = {};
 
@@ -666,6 +674,74 @@ app.post('/addParticipants' , function (req, res) {
 });
 
 var addParticipants = async (url, data, headers) => {
+   try {
+        var Record = await axios.post(url,data);
+        console.log("Data post succesfully");
+        return ({
+            success: true,
+            response: Record.data
+        });
+    } catch(error){
+        return ({
+            success: false,
+            message: error
+        });
+    }
+}
+
+app.post('/getPolicyDetails' , function (req, res) {
+
+   var id = req.body.data; 
+  
+   dbForLogin.get(id,function(err, body) {
+        console.log("erorr : "+err);
+        if (!err) {
+
+                res.send ({
+                    "status": 200,
+                    "message": 'Success',
+                    "bid":body.benificiary_id,
+                    "bname": body.benificiary_name,
+                });
+
+        } else {
+           res.send({
+			"status":404,
+			"data":err
+		});
+        }
+    });
+   
+});
+
+
+
+app.post('/BeneficiaryIdProofupdate', function (req, res) {
+
+  var reqdata = req.body;
+
+   var headers = {
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        }
+    };
+
+  var url = 'http://ec2-54-205-134-49.compute-1.amazonaws.com:8080/api/org.aetna.insurance.updateBenificiaryIdentityProof';
+
+ 	BeneficiaryIdProofupdate(url, reqdata, headers).then(function (data) {
+        if (data.success) {
+            res.json({
+                success: true,
+                RecordDetails: data.response
+            });
+        } else res.json({
+            success: false,
+            message: data
+        });
+    });
+});
+
+var BeneficiaryIdProofupdate = async (url, data, headers) => {
    try {
         var Record = await axios.post(url,data);
         console.log("Data post succesfully");
